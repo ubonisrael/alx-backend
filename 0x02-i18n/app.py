@@ -68,9 +68,9 @@ def get_locale() -> str:
 
 
 @app.route('/')
-def index_page():
+def index_page() -> str:
     """Returns the home page of the app"""
-    return render_template('7-index.html')
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
